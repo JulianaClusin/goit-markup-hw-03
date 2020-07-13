@@ -461,6 +461,10 @@ background-color:var(--title-section-theme-color);
   padding: 6px 22px;
   margin-top: 70px;
 }
+
+.button:focus {
+  outline: none;
+}
  
 .list-button:not(:last-child) {
   margin-right: 8px;
@@ -469,8 +473,15 @@ background-color:var(--title-section-theme-color);
   margin-bottom: 56px;
 }
 
-.button.button.portfolio:hover,
-.button.button.portfolio:focus {
+
+.button.portfolio:focus {
+color:var(--text-white-color);
+outline: none;
+background-color:var(--accent-color);
+}
+
+
+.button.portfolio:hover {
 color:var(--text-white-color);
 background-color:var(--accent-color);
 }
