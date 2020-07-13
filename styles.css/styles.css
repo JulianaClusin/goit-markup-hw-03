@@ -37,6 +37,7 @@ body {
   width: 1210px;
   padding-left: 20px;
   padding-right: 20px;
+
 }
 
 .navigation {
@@ -280,7 +281,7 @@ color:var(--text-white-color)
 
 .section.team {
 background-color:var(--title-section-theme-color);
-
+height: 700px;
 }
 
 .section-title.team {
@@ -348,12 +349,12 @@ color:var(--accent-color);
 
 /* FOOTER */
 
-footer{
+footer {
   background-color: #2F303A;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  width: 1600px;
   height: 253px;
 }
+
 .logo-studio{
 color:var(--text-white-color);
 }
