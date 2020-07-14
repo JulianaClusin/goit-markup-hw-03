@@ -258,7 +258,9 @@ margin-bottom: 94px;
 .section-title-list {
   margin-right: 30px;
 }
-
+.section-title-image {
+  display: block;
+}
 .section-title-text{
 font-weight: bold;
 font-size: 14px;
@@ -270,7 +272,7 @@ text-transform: uppercase;
 padding-top: 27px;
 padding-bottom: 27px;
 
-margin-top: -10px;
+margin: 0px;
 
 background-color: rgba(47, 48, 58, 0.8);
 color:var(--text-white-color)
