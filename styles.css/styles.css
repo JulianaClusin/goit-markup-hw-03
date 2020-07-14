@@ -386,6 +386,7 @@ color:var(--text-white-color);
 display: flex;
 margin-left: 131px;
 padding-top: 50px ;
+align-items: baseline;
 }
 
 .footer-section-address {
@@ -393,7 +394,6 @@ padding-top: 50px ;
 }
 
 .footer-section.join-in {
-  padding-top: 12px;
   margin-left: 69px;
 
 }
