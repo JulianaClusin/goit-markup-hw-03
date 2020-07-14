@@ -29,9 +29,15 @@ body {
     letter-spacing: 0.03em
 }
 
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
 /* ШАПКА */
 
-.conteiner {
+.container {
   margin-left: auto;
   margin-right: auto;
   width: 1210px;
@@ -51,10 +57,7 @@ font-weight: bold;
 font-size: 26px;
 line-height: 1.2;
 
-width: 153px;
-height: 31px;
 margin-right:85px;
-margin-top: 24px;
 }
 
 .navigation-list,.address {
@@ -78,16 +81,25 @@ color:var(--text-main-color);
  margin: 0;
   }
 
-  .address-nav, .navigation-list, .features-list,
-  .team-list, .what-are-we-doing, .clients, .social {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: space-between;
-    align-items: center;
+.address-nav, .navigation-list, .features-list,
+.team-list, .what-are-we-doing, .clients, .social {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: baseline;
   }
 
   /* HEADER */
+
+.header {
+  padding-top: 24px ;
+  padding-bottom: 25px;
+}
+
+.navigation {
+  align-items: baseline;
+}
 
 .navigation-list-link,
 .address-nav-list,
@@ -115,9 +127,6 @@ color:var(--text-main-color);
   }
 
 .navigation-list {
-width: 294px;
-height: 48px;
-margin-top: 30px;
 margin-right: 268px ;
 }
 
@@ -156,15 +165,16 @@ letter-spacing: 0.02em;
   margin-right: 67px;
 }
 
-.address-nav {
-  margin-top: 30px ;
-}
-
 /* HERO */
 
 .hero-section {
   margin: 0px;
   padding: 0px;
+}
+
+.section {
+  padding-top: 94px;
+  padding-bottom: 50px;
 }
 
 .hero {
@@ -181,7 +191,7 @@ line-height: 1.36;
 letter-spacing: 0.06em;
 text-transform: uppercase;
 
-margin: 0 px;
+margin: 0px;
 color:var(--text-white-color);
 }
 
@@ -191,7 +201,7 @@ color:var(--text-white-color);
   margin-bottom: 30px;
 }
 
-.button.hero {
+.hero-title-button{
 font-weight: bold;
 font-size: 16px;
 line-height: 1.87; 
@@ -206,8 +216,8 @@ border-radius: 4px;
 border-color: var(--accent-color);
 }
 
-.button.hero:hover,
-.button.hero:focus {
+.hero-title-button.hero:hover,
+.hero-title-button.hero:focus {
   color: var(--text-white-color);
 }
 
@@ -223,6 +233,7 @@ font-size: 14px;
 line-height: 1.14;
 text-transform: uppercase;
 
+margin: 0px;
 margin-bottom: 10px;
 
 color:var(--text-main-color)
@@ -232,6 +243,8 @@ color:var(--text-main-color)
 font-weight: normal;
 font-size: 14px;
 line-height: 1.71;
+
+margin: 0px;
 
 color:var(--text-address-color)
 }
@@ -245,14 +258,17 @@ line-height: 42px;
 text-align: center;
 
 padding: 0px ;
+margin-top: 0px;
 margin-bottom: 50px;
+}
 
 color:var(--text-main-color);
 }
 
 .what-are-we-doing {
 padding-inline-start: 0px;
-margin-bottom: 94px;
+padding: 0px; 
+margin: 0px;
 }
 
 .section-title-list {
@@ -274,7 +290,7 @@ padding-bottom: 27px;
 
 margin: 0px;
 
-background-color: rgba(47, 48, 58, 0.8);
+background: rgba(47, 48, 58, 0.8);
 color:var(--text-white-color)
 }
 
@@ -286,10 +302,6 @@ background-color:var(--title-section-theme-color);
 height: 700px;
 }
 
-.section-title.team {
-  padding-top: 94px;
-}
-
 .section-title-team {
   background-color:var(--title-theme-color);
   box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12);
@@ -299,6 +311,7 @@ height: 700px;
 
 .team-list {
   padding-inline-start: 0px;
+  margin: 0px;
 }
 
 .section-title-team-name {
@@ -319,6 +332,7 @@ font-size: 16px;
 line-height: 1.18;   
 text-align: center;
 
+margin: 0px;
 margin-bottom: 16px;
    
 color:var(--text-address-color)
@@ -328,6 +342,7 @@ color:var(--text-address-color)
 list-style-type: disc;
 color:var(--text-address-color);
 
+margin: 0px;
 margin-bottom: 24px;
 }
 
@@ -338,15 +353,11 @@ color:var(--accent-color);
 /* CLIENTS */
 
 .clients {
-  margin-bottom: 50px;
+  margin: 0px;
 }
 .clients.list:hover
 .clients.list:focus {
   color: var(--accent-color)
-}
-
-.section-title {
-  margin-top: 93px;
 }
 
 /* FOOTER */
@@ -397,7 +408,6 @@ align-items: baseline;
 
 .footer-section.join-in {
   margin-left: 69px;
-
 }
 
 .join-in {
@@ -422,68 +432,56 @@ margin-top: 46px;
 
 color: rgba(255, 255, 255, 0.4);
 }
+
 /* PORTFOLIO */
+
+.container.portfolio{
+padding: 94px 15px;
+}
+
 .filter-portfolio {
   display: flex;
-}
-
-.conteiner.portfolio-class-list {
-  margin-top: 50px;
-  padding-top: 50px;
-  margin-bottom: 111px;
-}
-
-.filter-portfolio.list {
-  width: 611px;
-  height: 54px;
   justify-content: center;
+  
+  margin-bottom: 50px;
 }
 
-.portfolio {
+.portfolio.list {
   display: flex;
   flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-
 }
 
-.button.potrfolio {
-font-family: Roboto;
-font-style: normal;
-font-weight: 500;
-font-size: 16px;
-line-height: 1.62;
-text-align: center;
+
+.work-button button{
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+  background-color: #f5f4fa;
+  border-radius: 4px;
+  border: 0px;
+  padding-top: 6px;
+  padding-right: 22px;
+  padding-bottom: 6px;
+  padding-left: 22px;
 
 color:var(--text-main-color);
 background-color:var(--title-section-theme-color);
 }
-
-.button.portfolio {
-  padding: 6px 22px;
-  margin-top: 70px;
-}
-
-.button:focus {
-  outline: none;
-}
  
-.list-button:not(:last-child) {
+.filter-portfolio-button.work-button:not(:last-child){
   margin-right: 8px;
 }
-.list-button {
-  margin-bottom: 56px;
-}
 
 
-.button.portfolio:focus {
+.work-button button:focus {
 color:var(--text-white-color);
 outline: none;
 background-color:var(--accent-color);
 }
 
-
-.button.portfolio:hover {
+.work-button button:hover {
 color:var(--text-white-color);
 background-color:var(--accent-color);
 }
@@ -505,6 +503,10 @@ background-color:var(--accent-color);
   margin-bottom: 0px;
 }
 
+.portfolio-list-class {
+  padding: 20px 24px;
+}
+
 .portfolio-list-title {
   font-weight: bold;
   font-size: 18px;
@@ -512,7 +514,8 @@ background-color:var(--accent-color);
       
   letter-spacing: 0.06em;
 
-  margin: 20px 24px 4px 24px ;
+  margin: 0px;
+  margin-bottom: 4px;
       
   color:var(--text-main-color);
   }
@@ -522,7 +525,7 @@ background-color:var(--accent-color);
   font-size: 16px;
   line-height: 1.87;
 
-  margin: 0px 24px 20px 24px ;
+  margin: 0px;
       
   color:var(--text-address-color);
   }
