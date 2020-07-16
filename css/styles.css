@@ -244,6 +244,18 @@ color:var(--text-main-color)
   margin-bottom: 0px;
 }
 
+.features-section-for-images {
+width: 270px;
+height: 120px;
+margin-bottom: 30px;
+background-color: var(--title-section-theme-color);
+padding-top: 25px;
+padding-right: 100px;
+padding-bottom: 25px;
+padding-left: 100px;
+border-radius: 4px;
+}
+
 .features .container {
   padding-top: 94px;
   
