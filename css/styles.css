@@ -72,6 +72,7 @@ color:var(--text-main-color);
 
 .link {
  text-decoration: none;
+ display: block;
   }
   
 .list {
@@ -91,10 +92,10 @@ color:var(--text-main-color);
 
   /* HEADER */
 
-.header {
+/* .header {
   padding-top: 24px ;
   padding-bottom: 25px;
-}
+} */
 
 .navigation {
   align-items: baseline;
@@ -133,9 +134,10 @@ margin-right: 268px ;
   margin-right: 50px;
 }
 
-.navigation-list-link {
-  display: block;
+.navigation-list-link.link {
   color: var(--text-main-color);
+  padding-bottom: 32px;
+  padding-top: 32px;
  }
 
 .navigation-list-link:hover,
@@ -147,7 +149,6 @@ margin-right: 268px ;
 
 .address-nav-link {
   color: var(--text-address-color);
-  display: block;
 }
 
 .address {
@@ -315,12 +316,10 @@ background: rgba(47, 48, 58, 0.8);
 color:var(--text-white-color)
 }
 
-
 /* TEAM */
 
 .section.team {
 background-color:var(--title-section-theme-color);
-height: 700px;
 }
 
 .section-title-team {
@@ -330,6 +329,7 @@ height: 700px;
 
   margin-right: 30px;
   padding-bottom: 24px;
+  list-style: none;
 }
 
 .team-list {
@@ -383,12 +383,21 @@ color:var(--accent-color);
   color: var(--accent-color)
 }
 
+.clients-list-logo {
+  display: flex;
+  width: 170px;
+  height: 90px;
+  justify-content: center;
+  border: 1px solid #AFB1B8;
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+
 /* FOOTER */
 
 footer {
   background-color: #2F303A;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  height: 253px;
 }
 
 .logo-studio{
@@ -404,10 +413,13 @@ font-weight: normal;
 font-size: 14px;
 font-style: normal;
 line-height: 1.71;
+
 display: block;
-padding-top: 9px;
-    
 color:var(--text-white-color)
+}
+
+.address-footer.text {
+  padding-bottom: 9px;
 }
 
 .address-nav-link-footer {
@@ -415,7 +427,7 @@ color:var(--text-white-color);
 }
 
 .address-nav-link-footer.mail {
-  padding-bottom: 9px;
+ padding-bottom: 9px;
 }
 
 .footer-flex {
