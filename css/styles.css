@@ -404,8 +404,10 @@ footer {
 color:var(--text-white-color);
 }
 
-.logo.link {
-padding-bottom: 8px;
+.logo.foot.link {
+  margin:0px;
+  padding: 0px;
+margin-bottom: 8px;
 }
 
 .address-footer {
@@ -419,7 +421,7 @@ color:var(--text-white-color)
 }
 
 .address-footer.text {
-  padding-bottom: 9px;
+  margin-bottom: 9px;
 }
 
 .address-nav-link-footer {
@@ -427,7 +429,7 @@ color:var(--text-white-color);
 }
 
 .address-nav-link-footer.mail {
- padding-bottom: 9px;
+ margin-bottom: 9px;
 }
 
 .footer-flex {
